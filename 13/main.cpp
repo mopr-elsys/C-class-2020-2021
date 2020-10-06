@@ -56,7 +56,14 @@ void sMult(int A[][M], int R[][M], int m, int n, int s){
 		}
 	}
 
-	print(R, m, n);
+	//print(R, m, n);
+
+}
+
+void sub(int A[][M], int B[][M], int C[][M], int m, int n){
+
+	sMult(B, B, m, n, -1);
+	sum(A, B, C, m, n);
 
 }
 
@@ -71,15 +78,16 @@ int main(){
 				    {1, 1, 1},
 					{1, 1, 1}};
 					
-	int c[3][M] =  {{0, 0, 0},
-					{0, 0, 0},
-					{0, 0, 0}};
+	int c[3][M] =  {{0, 1, 0},
+					{0, 1, 0},
+					{0, 1, 0}};
 	//print(a, 3, 3);
 	
 	//cout << equal(a, 3, 3, b)<<endl;;
 	//sum(a, b, c, 3, 3);
-	//sMult(a, c, 3, 3, 5);
-	transpose(a, c, 3, 3);
+	//sMult(b, b, 3, 3, 5);
+	//transpose(a, c, 3, 3);
+	sub(b, c, a, 3, 3);
 	return 0;
 }
 
