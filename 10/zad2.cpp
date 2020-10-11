@@ -26,4 +26,5 @@ int main(){
 	int C[2][N];
 	sum(A, B, C, 2, 2);
 	print(C, 2, 2);
+	return 0;
 }
