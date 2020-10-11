@@ -39,8 +39,10 @@ int main(){
 	int A[2][N] = {{1, 2, 3}, {4, 5, 6}};
 	int B[2][N] = {{7, 8 , 9}, {10, 11, 12}};
 	int C[2][N];
+	
 	print(A, 2, 3);
 	print(B, 2, 3);
+	
 	sub(A, B, C, 2, 3);
 	print(C, 2, 3);
 	return 0;
